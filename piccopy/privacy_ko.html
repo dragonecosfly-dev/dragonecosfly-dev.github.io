@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>픽카피 개인정보처리방침</title>
+<style>
+  body { max-width: 720px; margin: 40px auto; padding: 0 20px; font-family: -apple-system, "Malgun Gothic", sans-serif; line-height: 1.7; color: #222; }
+  h1 { font-size: 1.6em; } h2 { font-size: 1.15em; margin-top: 2em; }
+  table { border-collapse: collapse; } td, th { border: 1px solid #ccc; padding: 6px 10px; text-align: left; }
+  .meta { color: #666; font-size: 0.9em; }
+</style>
+</head>
+<body>
+<h1>픽카피 개인정보처리방침</h1>
+<p class="meta">시행일 2026-09-24 · 앱 패키지 <code>com.piccopy.pic_copy</code> · <a href="privacy_en.html">English</a></p>
+
+<p><strong>픽카피는 어떤 개인정보도 수집하지 않습니다. <strong>사진과 목록은 어떤 경우에도 기기 밖으로 나가지 않습니다.</strong> 앱이 바깥과 통신하는 경우는 구매 여부를 구글 플레이에 확인할 때뿐입니다(§4).</strong>
+서버가 없고, 계정이 없고, 광고와 분석 도구가 없습니다. 이 문서는 그 사실을 항목별로 적은 것입니다.</p>
+
+<h2>1. 앱이 하는 일</h2>
+<p>사용자의 폰에 있는 사진을 사용자가 직접 연결한 USB 메모리로 복사합니다. 그게 전부입니다.</p>
+
+<h2>2. 접근하는 권한과 이유</h2>
+<table>
+<tr><th>권한</th><th>이유</th><th>범위</th></tr>
+<tr><td>사진 읽기<br><code>READ_MEDIA_IMAGES</code> / <code>READ_EXTERNAL_STORAGE</code></td>
+    <td>아직 USB에 없는 사진을 찾기 위해</td><td><strong>읽기 전용.</strong> 사진을 수정·삭제하는 기능은 없습니다</td></tr>
+<tr><td>USB 저장소 (SAF)</td><td>사용자가 고른 USB 폴더에 사진을 쓰기 위해</td><td>사용자가 직접 선택한 폴더만. 앱이 임의로 다른 위치에 접근하지 않습니다</td></tr>
+<tr><td>USB 기기 감지</td><td>USB를 꽂았을 때 앱을 열기 위해</td><td>연결 여부만 감지합니다</td></tr>
+<tr><td>알림</td><td>백업이 진행 중임을 표시하기 위해</td><td>기기 안에서만</td></tr>
+</table>
+<p>인터넷 권한은 <strong>결제에만 씁니다.</strong> 「전부 옮기기」를 구매하거나
+이미 구매했는지 확인할 때 구글 플레이와 통신합니다. <strong>사진은 이 통신에
+포함되지 않습니다.</strong> 앱에는 사진이나 목록을 기기 밖으로 보내는 코드가
+없습니다.</p>
+
+<h2>3. USB에 기록되는 것</h2>
+<p>사진 파일 외에, 다음 백업 때 이미 옮긴 사진을 건너뛰기 위한 <strong>목록 파일</strong>을 USB의 숨김 폴더(<code>.사진백업/</code>)에 기록합니다. 목록에는 다음이 들어갑니다.</p>
+<ul>
+<li>사진 파일명 · 크기 · 촬영 시각 · USB 안의 저장 경로</li>
+<li>이 폰을 구별하기 위해 앱이 만든 <strong>무작위 식별자</strong> (기기의 고유번호·전화번호·계정과 무관)</li>
+<li>사용자가 직접 입력한 <strong>폰 이름</strong> (예: 「아빠폰」)</li>
+</ul>
+<p>이 파일은 <strong>사용자의 USB에만</strong> 존재합니다. 앱 개발자를 포함해 누구에게도 전송되지 않습니다. USB를 포맷하거나 해당 폴더를 지우면 사라집니다.</p>
+
+<h2>4. 결제</h2>
+<p>무료로 300장까지 옮겨 볼 수 있고, 그 다음부터는 한 번만 결제하면 됩니다.
+구독이 아닙니다. <strong>되찾는 것은 언제나 무료입니다</strong> — USB를 PC에
+꽂으면 이 앱 없이도 평범한 사진 파일로 열립니다.</p>
+<ul>
+  <li><strong>결제는 구글 플레이가 처리합니다.</strong> 카드번호를 비롯한 결제
+      정보를 이 앱은 보지도, 받지도, 저장하지도 않습니다.</li>
+  <li>앱이 구글에 묻는 것은 <strong>「이 구글 계정이 구매했는가」</strong> 하나뿐입니다.
+      그 답만 받아 화면을 바꿉니다.</li>
+  <li>구매 사실을 <strong>앱이 따로 저장하지 않습니다.</strong> 원장은 구글이
+      갖고 있어서, 폰을 바꾸거나 앱을 지웠다 깔아도 같은 계정이면 그대로
+      복원됩니다.</li>
+  <li>구글 플레이가 결제 과정에서 처리하는 정보는 구글의 개인정보처리방침을
+      따릅니다.</li>
+</ul>
+<p>무료로 몇 장을 옮겼는지는 <strong>USB 안의 목록 파일에</strong> 적힙니다(§3).
+앱 개발자에게 전송되지 않습니다.</p>
+
+<h2>5. 폰에 저장되는 것</h2>
+<p>앱 설정(언어, 마지막에 지정한 USB 폴더, 폰 이름의 사본)만 앱 내부 저장소에 둡니다. 앱을 삭제하면 함께 삭제됩니다.</p>
+
+<h2>6. 수집·공유하지 않는 것</h2>
+<ul>
+<li>이름, 이메일, 전화번호, 연락처, 위치</li>
+<li>사진의 내용 — 앱은 사진을 열어 보지 않고 파일로만 복사합니다</li>
+<li>광고 식별자, 분석·통계, 오류 보고</li>
+<li>제3자 SDK 로 보내는 어떤 데이터</li>
+</ul>
+
+<h2>7. 어린이</h2>
+<p>이 앱은 어린이를 대상으로 하지 않으며, 연령과 무관하게 어떤 정보도 수집하지 않습니다.</p>
+
+<h2>8. 변경</h2>
+<p>2026-09-24 — 결제 기능이 추가되어 인터넷 사용과 결제 항목을 적었습니다.</p>
+<p>앱이 데이터를 전송하는 기능(예: 오류 보고, 광고)을 추가하게 되면 이 방침을 먼저 고치고 시행일을 갱신합니다. 이 페이지가 최신본입니다.</p>
+
+<h2>9. 문의</h2>
+<p>Google Play 스토어 등재 페이지의 개발자 연락처로 문의해 주세요.</p>
+</body>
+</html>
